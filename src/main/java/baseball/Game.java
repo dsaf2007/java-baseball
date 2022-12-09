@@ -61,10 +61,8 @@ public class Game {
             com.createNumber();
             judge.resetScore();
             return true;
-        } else {
-            //System.out.print(END_GAME);
+        } 
             return false;
-        }
     }
 
 }

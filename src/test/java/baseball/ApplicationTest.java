@@ -71,7 +71,6 @@ class ApplicationTest extends NsTest {
         Computer com = new Computer();
         com.createNumber();
         InputValidator testClass = new InputValidator(com.getAnswer());
-        System.out.println(com.getAnswer());
         assertThat(testClass.checkInput()).isEqualTo(true);
     }
 
@@ -80,6 +79,8 @@ class ApplicationTest extends NsTest {
         Judge testJudge = new Judge();
         testJudge.setAnswerToJudge("123", "143");
         testJudge.getScore();
-        assertThat(testJudge.makeResultString()).isEqualTo("2 스트라이크");
+        assertThat(testJudge.makeResultString()).isEqualTo("2스트라이크");
     }
+
+    
 }
