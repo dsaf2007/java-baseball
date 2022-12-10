@@ -31,9 +31,7 @@ public class InputValidator {
         if (!isRightNumber()) {
             return result;
         }
-
         isInputDuplicated();
-
         return result;
     }
 
