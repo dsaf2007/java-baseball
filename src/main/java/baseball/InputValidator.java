@@ -24,18 +24,16 @@ public class InputValidator {
     }
 
     public boolean checkInput() {
-        
-        if(!isRightLength())
-        {
+
+        if (!isRightLength()) {
             return result;
         }
-        if(!isRightNumber())
-        {
+        if (!isRightNumber()) {
             return result;
         }
-        
+
         isInputDuplicated();
-    
+
         return result;
     }
 
@@ -66,5 +64,12 @@ public class InputValidator {
             }
         }
         return result;
+    }
+
+    public static boolean validateRestartCommand(String input) {
+        if (input.equals("1") || input.equals("2")) {
+            return true;
+        }
+        return false;
     }
 }
