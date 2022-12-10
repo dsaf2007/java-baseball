@@ -66,30 +66,20 @@ public class Judge {
         }
     }
 
-    public String makeResultString()
-    {
+    public String makeResultString() {
         String resultString = "";
-        if(ball == 0 && strike == 0)
-        {
+        if (ball == 0 && strike == 0) {
             resultString = NOTHING;
         }
-        else
-        {
-            if(ball > 0)
-            {
-                resultString += ball + BALL + " ";
-            }
-            if(strike > 0)
-            {
-                resultString += strike + STRIKE;
-            }
+        if (ball > 0) {
+            resultString += ball + BALL + " ";
         }
-
-        if(isGameOver())
-        {
+        if (strike > 0) {
+            resultString += strike + STRIKE;
+        }
+        if (isGameOver()) {
             resultString += "\n" + GAMEOVER;
         }
-
         return resultString;
     }
 }
