@@ -1,4 +1,4 @@
-package baseball;
+package baseball.model;
 
 /*
  * 입력값을 검증하는 클래스.

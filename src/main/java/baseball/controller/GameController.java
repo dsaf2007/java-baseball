@@ -1,8 +1,9 @@
-package baseball;
+package baseball.controller;
 
-import camp.nextstep.edu.missionutils.Console;
+import baseball.model.*;
+import baseball.view.*;
 
-public class Game {
+public class GameController {
 
     /*
      * 게임의 엔진 역할을 하는 메인루프
@@ -13,7 +14,7 @@ public class Game {
     private static Judge judge = new Judge();
     private static String outputStr = "";
 
-    public Game() {
+    public GameController() {
         com.createNumber();
         judge.resetScore();
     }

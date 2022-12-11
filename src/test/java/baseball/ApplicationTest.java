@@ -8,6 +8,10 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import camp.nextstep.edu.missionutils.test.NsTest;
 import org.junit.jupiter.api.Test;
 
+import baseball.model.Computer;
+import baseball.model.InputValidator;
+import baseball.model.Judge;
+
 class ApplicationTest extends NsTest {
 
     @Test
